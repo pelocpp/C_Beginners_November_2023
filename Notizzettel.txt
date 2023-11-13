@@ -18,6 +18,22 @@ b) Visual Studio Version (2022)
 
 ============================
 
+Pause:  10.30 .... ca.
+
+12 und 13
+
+14.45 
+
+17 Uhr
+
+============================
+
+Übungen in den Nachmittag zu verschieben ...
+
+Am nächsten Morgen zum Start (Musterlösung) besprechen ...
+
+============================
+
 i) Was bringe ich mit ??? // Python, C, Visual Basic
 
 ii) Was erwarte ich von diesem Kurs?
@@ -45,8 +61,164 @@ Github Neu  // Account : wir machen das ohne // Lesend zugreifen
 
 =================================================
 
+"Hello World"
+
+"Ein Programm erstellen"
+
+Quelltext (Source Code) : Programm in (Human readable form) menschenlesbarer Form
+
+Maschinenprogramm:   Programm für die CPU 
+
+Quelltext ===> Maschinenprogramm:  Übersetzer (Compiler) // Programm
+
+Wie sieht Quelltext aus ???
+
+"Wie in Text in einer natürlichen Sprache"
+
+C:  Grammatik ; Lexikon (welche Wörter); 
+
+Was tut ein Programm  ?? Bedeutung: Semantik
+
+===================================================
+
+Quelltext:
+
+2 AUFGABEN:
+
+a) Grammatik !!!!
+
+   ==> Rechte Maustaste auf dem Dateinamen: "Compile" / "Übersetzen"
+
+b) Wir erzeugen ein Maschinenprogramm
+
+   ==> Rechte Maustaste auf dem Projekt (!!!) "Build" / "Erzeugen"
+
+
+Anmerkung: Wo ist es denn, das Maschinenprogramm :)
+
+In einem Unterverzeichnis mit der Endung ".exe"  (Windows)
 
 
 
+Achtung:
 
+Dateiname muss mit .c enden !!!  ===> C-Compiler
+
+Dateiname mit .cpp enden !!!     ===> C++-Compiler
+
+a) C ist ein C++ enthalten (Teilmenge)  // zu 99%
+
+b) Es ist nicht möglich (Ausnahmen ..), C und C++ zu mischen ...
+
+c) Machmal sind die Fehlermeldungen unterschiedlich (C, C++)
+
+// ============================
+
+C ist eine format-freie Programmiersprache:
+
+Beispiel: Python ist NICHT format-frei
+( 4 Leerzeichen für einen Block )
+
+// ============================
+
+Was sind Datentypen // was sind Variablen ???
+
+Variablen: 
+
+"Variablen sind Dinge einer bestimmten Form"
+
+Variablen stehen für ein oder mehrere Bytes Speicherplatz
+
+Eine Variable (Name: Bezeichner) steht für Speicher !!!
+
+NICHT: Ebene von Maschinensprachen:  Bits, Bytes ... 0 und 1
+
+SONDERN: Ebene einer höheren Programiersprache :
+
+Hier wird dem Speicherplatz eine "Interpretation" zugeordnet:
+
+Speicherplatz ===> ganzen Zahl (123)
+              ===> Kommazahl (99.99)
+              ===> einzelnes Zeichen ('?', 'A')
+              ===> mehrere Zeichen (Zeichenkette) ("ABC")
+
+Interpretation ===> Begriff: Datentyp
+
+
+Datentypen:
+
+Ganze Zahl:          int           4 Bytes (auf den meisten Maschinen)
+                     short         2 Bytes (per Definition)
+                     long          4 Bytes oder 8 Bytes
+                     long long     8
+                     
+
+Kommazahl:           float         4 Bytes
+                     double        8 Bytes
+
+einzelnes Zeichen:   char          1 Bytes
+
+(( UNICODE))                       2 Bytes
+
+Zeichenkette:        const char*
+
+// Nebenbemerkung:
+
+Fach:  Mikrocomputer - Programmierung.
+
+Ganze Zahl:          int
+
+Wieviele Bits / Bytes sind das denn im Speicher ?????
+
+Bit:   0 oder 1
+
+Byte:  8 Bits
+
+Word:  16 Bits // 2 Bytes
+
+Doppelwort:  32 Bits // 4 Bytes
+
+Quad-Wort:   64 Bits // 8 Bytes
+
+
+Antwort: int ==> 4 Bytes (32 Bit)
+
+Beispiel:    Zahl 17  
+
+Zahl 17 in Bits dargestellt ???  2-er Komplement
+
+1 0001
+
+Das 2-er System:
+
+Von rechts:
+
+2 hoch 0   == 1 ==> 1
+2 hoch 1   == 0
+2 hoch 2   == 0
+2 hoch 3   == 0
+2 hoch 4   == 1 ==> 16
+----------------------
+                    17
+
+
+// ====================================
+
+Ganze Zahlen:  "2-er Komplement"
+
+Komma-Zahlen:  123.456  ==> IEEE - Format
+
+4.5 ===> 01000000100100000000000000000000
+
+// ====================================
+
+    int n;  
+
+    n steht für eine Variable,
+    die im Speicher 4 Bytes belegt und ganze Zahlen
+    aufnehmen kann.
+
+    n steht "irgendwo" im Speicher
+
+    Der Speicher wird prinzipiell vom Betriebssystem verwaltet.
 
