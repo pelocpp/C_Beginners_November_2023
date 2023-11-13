@@ -1,0 +1,52 @@
+============================
+
+C für Einsteiger
+
+Peter Loos / "Du"
+
+Guten Morgen
+
+============================
+
+Wie gestalte ich diesen Kurs?
+
+2 Tools:
+
+a) Github
+
+b) Visual Studio Version (2022)
+
+============================
+
+i) Was bringe ich mit ??? // Python, C, Visual Basic
+
+ii) Was erwarte ich von diesem Kurs?
+
+== ich muss in der nächsten Woche in einem C-Projekt mitarbeiten
+== Überblick
+== Ich muss C-Quellcode von anderen lesen / verstehen können
+== Interesse
+
+>> 2. Chance
+
+>> Englisch
+
+Fühle mich wohler: 
+
+Wie geht es euch ??? Langsamer, schneller, weiter so ... Feedback
+
+>> Übungen ... 
+
+"C kann man nicht lernen"  // C muss man praktizieren // doing
+
+=================================================
+
+Github Neu  // Account : wir machen das ohne // Lesend zugreifen
+
+=================================================
+
+
+
+
+
+
