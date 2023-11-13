@@ -346,9 +346,32 @@ void loesung_zins_berechnung()
         startCapitalStock, year, capitalStock);
 }
 
+void loesung_zusatz_aufgabe_01 ()
+{
+    int n = 10;
+
+    int summe = 0;
+
+    int index = 1;
+
+    // Summe aller Zahlen von 1 bis n
+
+    while (index <= 10) {
+
+        printf("Index: %d -  Summe = %d\n", index, summe);
+
+        summe = summe + index;
+
+        index = index + 1;
+    }
+
+    printf("Summe: %d\n", summe);
+}
+
+
 void main()
 {
-    zweite_wiederholungs_anweisung();
+    loesung_zusatz_aufgabe_01();
 }
 
 // Einsprungpunkt
