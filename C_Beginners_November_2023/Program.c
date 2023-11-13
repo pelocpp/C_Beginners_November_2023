@@ -159,9 +159,48 @@ void erste_Schritte_if_statement_03()
 }
 
 
+// Ansatz: Maximum dreier Zahlen
+
+void erste_Schritte_aufgabe_maximum()
+{
+    int a = 12; 
+    int b = 444;
+    int c = 11;
+
+    // diese Richtung soll die Auggabe gehen
+   // if (a < b && ..............)
+
+   // zB:  "444 ist die groesste Zahl"
+}
+
+void erste_Schritte_schaltjahr ()
+{
+    int jahr  = 1984;
+
+    int rest;
+
+    rest = jahr % 4;
+
+    if (rest == 0)
+    {
+        printf("Jahr ist durch 4 teilbar \n");
+    }
+    else
+    {
+        printf("Jahr ist NICHT durch 4 teilbar \n");
+    }
+
+
+    // diese Richtung soll die Auggabe gehen
+   // if (a < b && ..............)
+
+   // zB:  "444 ist die groesste Zahl"
+}
+
+
 void main()
 {
-    erste_Schritte_if_statement_03();
+    erste_Schritte_schaltjahr();
 }
 
 // Einsprungpunkt

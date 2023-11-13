@@ -382,3 +382,12 @@ Verknüfung von 2 Bedingungen:
 Logisches Und:   &&    doppeltes Kaufmannsund // Ampersand
 Logisches Oder:  ||    doppelter vertikaler Strich
 
+======================================================
+
+Jahr durch 4 teilbar
+
+Lösung: Rest bei Division durch 4
+
+jahr / 4    Ergebnis der Division
+
+jahr % 4    Modulus: Rest bei der Division
