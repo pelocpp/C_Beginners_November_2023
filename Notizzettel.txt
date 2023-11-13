@@ -391,3 +391,58 @@ Lösung: Rest bei Division durch 4
 jahr / 4    Ergebnis der Division
 
 jahr % 4    Modulus: Rest bei der Division
+
+
+======================================================
+
+Kontrollstrukturen:
+
+if: check.
+
+Bedingung
+
+-----------------------------------------------------
+
+
+Wiederholung: 
+
+== while
+
+== for
+
+
+
+Führe Anweisungen MEHRERE MAL aus.
+
+Wie oft ??? Bedingung .
+
+SYNTAX:
+
+while ( bedingung ) 
+{
+    // anweisungen
+}
+
+Alle Anweisungen, die wiederholt ausgeführt werden,
+stehen in dem Block  (alles zwischen {  und } ).
+
+Vorsicht: Die bedingung ist "irgendwie" zu ändern,
+
+damit es nicht zu einer Endlosscheife kommt.
+
+==================================================
+
+"Kontrollstrukturen lassen sich schachteln"
+
+Beispiel:
+
+Alle ungeraden Zahlen zwischen 1 und 20 ausgeben.
+
+==> while - Wiederholungsanweisung.
+
+    ==> Rumpf: if -Anweisung (ungerade).
+
+
+
+
+

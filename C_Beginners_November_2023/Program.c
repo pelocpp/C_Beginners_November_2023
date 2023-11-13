@@ -132,6 +132,7 @@ void erste_Schritte_if_statement_02 ()
     printf("hier geht es weiter\n");
 }
 
+
 void erste_Schritte_if_statement_03()
 {
     int n = 0;
@@ -157,6 +158,57 @@ void erste_Schritte_if_statement_03()
 
     printf("hier geht es weiter\n");
 }
+
+
+void aufgabe_schaltjahr()
+{
+    int year = 1999;
+
+    printf("Das Jahr %d ", year);
+
+    if (year % 4 != 0) {
+
+        printf("ist kein Schaltjahr!\n");
+    }
+    else if (year % 100 != 0) {
+
+        printf("ist ein Schaltjahr!\n");
+    }
+    else if (year % 400 != 0) {
+
+        printf("ist kein Schaltjahr!\n");
+    }
+    else
+    {
+        printf("ist ein Schaltjahr!\n");
+    }
+}
+
+void aufgabe_maximum_dreier_zahlen_erste_loesung ()
+{
+    int a = 123;
+    int b = 123;
+    int c = 123;
+
+    if (a >= b && a >= c) { // if a is greater than both b and c, a is the largest
+
+        printf("%d is the largest number.", a);
+    }
+    else if (b >= a && b >= c) { // if b is greater than both a and c, b is the largest
+
+        printf("%d is the largest number.", b);
+    }
+    else { // if both above conditions are false, c is the largest
+
+        printf("%d is the largest number.", c);
+    }
+}
+
+void aufgabe_2_maximum_dreier_zahlen_zweite_loesung()
+{
+}
+
+
 
 
 // Ansatz: Maximum dreier Zahlen
@@ -198,9 +250,43 @@ void erste_Schritte_schaltjahr ()
 }
 
 
+void erste_wiederholungs_anweisung()
+{
+    int n = 1;
+
+    while ( n <= 3 )
+    {
+        printf("eine Anweisung: n = %d\n", n);
+
+        n = n + 1;
+    }
+
+    printf("Danach\n");
+}
+
+void zweite_wiederholungs_anweisung()
+{
+    int n = 1;
+    int ende = 20;
+
+    // alle ungeraden Zahlen zwischen 1 und 20 berechnen
+    while (n <= ende)
+    {
+        if (n % 2 == 1)
+        {
+            printf("Ungerades n: %d\n", n);
+        }
+
+        n = n + 1;
+    }
+
+    printf("Danach\n");
+}
+
+
 void main()
 {
-    erste_Schritte_schaltjahr();
+    zweite_wiederholungs_anweisung();
 }
 
 // Einsprungpunkt
