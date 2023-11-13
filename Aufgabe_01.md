@@ -71,3 +71,19 @@ Die Ausgabe des Programms sollte in etwa so aussehen:
 
 
 
+### Aufgabe 5 - Zusatzaufgaben:
+
+Zusatzaufgaben für Wiederholungsanweisung:
+ 
+Wir brachten alle Zahlen von 1 bis zu einer Zahl *n*:
+
+  * Berechnen Sie die *Summe* aller Zahlen von 1 bis *n*.
+  * Berechnen Sie die *Summe* aller geraden Zahlen von 1 bis *n*.
+  * Berechnen Sie die *Summe* aller ungeraden  von 1 bis *n*.
+  * Berechnnen Sie den Mittelwert aller Zahlen von 1 bis *n*.
+
+
+Beispiel:
+
+*n* hat den Wert 5 => *Summe* aller Zahlen von 1 bis 5 ist gleich 15.
+
