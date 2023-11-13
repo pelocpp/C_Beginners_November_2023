@@ -222,3 +222,163 @@ Komma-Zahlen:  123.456  ==> IEEE - Format
 
     Der Speicher wird prinzipiell vom Betriebssystem verwaltet.
 
+    Eine Variable kann man
+
+    == lesen
+
+    == schreiben
+
+    == lesen UND schreiben
+
+    ================================
+
+    Bei Gleitkommazahlen gibt es RUNDUNGSFEHLER // RUNDUNGS - UNGENAUIGEITEN:
+
+    Beispiel:
+
+    int n = 123;
+    
+    double x = 55.77;
+
+    n = x;    // Geht das ??? 
+
+              // Weil int und double sind VERSCHIEDENE Datentypen.
+
+
+    Ja  - mit ABSCHNEIDEN / KEIN RUNDEN.
+
+    n hat den Wert 55.
+
+==========================================
+
+Rechnen // Arithmetik:  mit ganzen Zahlen ODER mit Kommazahlen.
+
+Vorsicht:  Weil in jedem Fall die Anzahl der Bytes pro Variable begrenz ist:
+
+   Es kann zu Fehlern kommen :  an den GRENZEN
+
+
+Konsequenz:
+
+Sehr große Zahlen:  Überlauf
+
+Zweites Problem:
+
+Rundungsfehler: 
+
+Frage: Euer Gehaltszettel // unser Sparkassenkonto:
+
+Kontostand:   double  konto_stand; 
+
+ABER: double geht auch nicht: Rundungsfehler ( 1000.- €  // 999.99999 ,. € )
+
+Was ist es denn dann ????????
+
+Da muss man EIGENE Datentypen schreiben:
+
+== Currency: So etwas müsste man selbst schreiben ...
+
+==========================================
+
+
+Kontrollstrukturen:
+
+Ablauf eines Programms:
+
+Regel: Der Reihe nach // Anweisung für Anweisung // sequentiell
+
+Davon gibt es Ausnahmen: Kontrollstrukturen.
+
+
+Condition // Bedingung:
+
+"ist ein Wert größer oder kleiner Null"
+
+Ist etwas erfüllt oder nicht:  Ja, Nein:  
+
+Ja Nein:   ist erfüllt:       true     1
+Ja Nein:   ist nicht erfüllt: false    0
+
+Condition: if - Anweisung
+
+SYNTAX:
+
+if ( bedingung )
+{
+}
+
+Wenn eine Bedingung erfüllt ist, werden alle Anweisung
+innerhalb der Klammern { und } ausgeführt.
+
+Wenn eine Bedingung NICHT erfüllt ist, geht es mit
+der ERSTEN Anweisung NACH der SCHLIESSENDEN Klammer } weiter.
+
+==================================================
+
+Ausführung eines Programms:
+
+A) Laufen lassen
+
+B) Mit Hilfe eines besonderen Tools:  Debugger.
+
+
+   Was ist / kann der Debugger ???
+
+   i) ein Programm
+
+   ii) dieses Programm kann ein zweites Programm
+       Schritt für Schritt ausführen
+
+       Zeile für Zeile
+
+       Geichzeitig kann man die Inhalte von Variablen
+       anschauen
+
+   iii) Unersetzlich für die Entwicklung eines Programms.
+
+Magic Keys  // Magic Menus:
+
+Einzelschritt == eine Zeile ausführen:  F10
+
+Gehe zu Zeile XXX:   Haltepunkt (Breakpoint) setzen: F9
+
+Erweiterung von 'if':
+
+if - else:
+
+SYNTAX:
+
+if ( bedingung )
+{
+    // hier
+}
+else
+{
+    // oder
+}
+
+
+Zweite Erweiterung von 'if':
+
+if - else if
+
+
+
+==================================================
+
+Operator:  
+
+>   >=
+
+<   <=
+
+Gleichheit:    == 
+
+Ungleichheit:  !=
+
+
+Verknüfung von 2 Bedingungen:
+
+Logisches Und:   &&    doppeltes Kaufmannsund // Ampersand
+Logisches Oder:  ||    doppelter vertikaler Strich
+
