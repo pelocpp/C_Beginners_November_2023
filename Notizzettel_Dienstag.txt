@@ -1,0 +1,152 @@
+============================
+
+C für Einsteiger
+
+Dienstag
+--------
+
+============================
+
+Was machen wir heute ???
+
+== Unterprogramme
+
+== Was ist das main ???
+
+== Aufteilung eines Programms auf mehrere Dateien
+
+== Besprechung der Musterlösung
+
+== Aufgaben ( mehrere, UNTERSCHIEDLICHE Level )
+
+//  15.00 Uhr: Telefonat (15 Minuten)
+
+
+============================
+
+Begriff eines Unterprogramms:
+
+Beobachtung: Ich habe eine Reihe von Anweisungen:
+
+   Diese möchte an verschiedenen Stellen im Programm verwenden.
+
+i)   Kopieren !!! 
+
+     NACHTEILE:  Ich will in der Sequenz von Anweisungen eine Änderung vornehmen. Umständlich
+
+     NACHTEIL: Es ist ein Fehler in dieser Sequenz ==> Der Fehler ist öfters im Programm vorhanden.
+
+
+     Keine Lösung
+
+ii)  Möglichkeit:
+
+     Einer Sequenz von Anweisungen einen Namen geben ... und die Sequenz mit diesem Namen ausführen.
+
+===================================================
+
+Wer ist main:
+
+a) main ist ein Unterprogramm:
+
+  Der name 'main'  (kleingeschrieben !!!) ist RESERVIERT:
+
+  Für das Betriebssytem: Im Maschinencode fängt das Programm an der Stelle von
+  main an !!!!!!
+
+===================================================
+
+Struktur eines C-Programs:
+
+== Ein C-Programm besteht aus MEHREREN C-Dateien
+
+   .c - Dateien mit C-Quellode (Unterprogramm / globale Variablen)
+
+   .h - Dateien mit Vorwärtsdeklarationen
+
+== Mit 'extern'-Vorwärtsdeklarationen lassen sich Unterprogramme
+   in verschiedenen C-Dateien ablegen und in einer anderen C-Datei aufrufen.
+
+== Wer findet am Ende ein C-Unterprogramm in einer anderen Datei ???
+
+a) C-Datei ===> Compiler ===> Ergebnis-Datei: "Object-File" (Maschinencode / Weitere Informationen)
+
+   Neben dem Compiler: LINKER :   ===> "Object-File" (mehrere) ===> EINE .exe-Datei
+
+
+
+d) Viele 'extern'-Vorwärtsdeklarationen legt man am besten in 
+   einer separaten Datei an.
+
+   Diese Datei enthält nur 'extern'-Vorwärtsdeklarationen --
+   sie ist deshalb keine Datei mit C-Quellcode (C-Anweisungen)
+
+   ==> Header-Datei:  Diese hat die Endung  .h  (h  ==> header)
+
+
+Beispiel: error LNK2019:  LNK ==> Linker
+
+===================================================
+
+Unterprogrammen:
+
+Es gibt die Möglichkeit, Informationen einem 
+Unterprogramm mitzugeben:
+
+==> Parameter: Sind Daten / Werte für ein Unterprogramm
+
+    Anderes Wort für Parameter: Stellvertreter
+
+==> Wo stehen die Parameter: Innerhalb der runden Klammern ( )
+
+==> Syntax: Datentyp Namen
+
+    void myGoodMorning( int wieOft )
+
+===================================================
+
+Begriff: Schnittstelle eines Unterprogramms:
+
+a) Der Name des Unterprogramms
+
+b) Alle Parameter: Name und Typ
+
+b1) Daraus folgt: Auch die Anzahl der Parameter zählt zur Schnittstelle
+
+c) KOMMT NOCH: Der Rückgabetyp
+
+===================================================
+
+
+i)   Welche, die ein Ergebnis berechnen
+
+ii)  Welche, die kein Ergebnis berechnen
+
+===================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Unterprogrammen:
+
+Es gibt "SORTEN / ARTEN" von Unterprogrammen:
+
+i)   Welche, die ein Ergebnis berechnen
+
+ii)  Welche, die kein Ergebnis berechnen
+
+===================================================
+
