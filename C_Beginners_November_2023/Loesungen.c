@@ -1,5 +1,90 @@
 #include <stdio.h>
 
+
+// Ansatz: Maximum dreier Zahlen
+
+void erste_Schritte_aufgabe_maximum()
+{
+    int a = 12;
+    int b = 444;
+    int c = 11;
+
+    // diese Richtung soll die Auggabe gehen
+   // if (a < b && ..............)
+
+   // zB:  "444 ist die groesste Zahl"
+}
+
+void erste_Schritte_schaltjahr()
+{
+    int jahr = 1984;
+
+    int rest;
+
+    rest = jahr % 4;
+
+    if (rest == 0)
+    {
+        printf("Jahr ist durch 4 teilbar \n");
+    }
+    else
+    {
+        printf("Jahr ist NICHT durch 4 teilbar \n");
+    }
+
+
+    // diese Richtung soll die Auggabe gehen
+   // if (a < b && ..............)
+
+   // zB:  "444 ist die groesste Zahl"
+}
+
+
+void aufgabe_schaltjahr()
+{
+    int year = 1999;
+
+    printf("Das Jahr %d ", year);
+
+    if (year % 4 != 0) {
+
+        printf("ist kein Schaltjahr!\n");
+    }
+    else if (year % 100 != 0) {
+
+        printf("ist ein Schaltjahr!\n");
+    }
+    else if (year % 400 != 0) {
+
+        printf("ist kein Schaltjahr!\n");
+    }
+    else
+    {
+        printf("ist ein Schaltjahr!\n");
+    }
+}
+
+void aufgabe_maximum_dreier_zahlen_erste_loesung()
+{
+    int a = 123;
+    int b = 123;
+    int c = 123;
+
+    if (a >= b && a >= c) { // if a is greater than both b and c, a is the largest
+
+        printf("%d is the largest number.", a);
+    }
+    else if (b >= a && b >= c) { // if b is greater than both a and c, b is the largest
+
+        printf("%d is the largest number.", b);
+    }
+    else { // if both above conditions are false, c is the largest
+
+        printf("%d is the largest number.", c);
+    }
+}
+
+
 void loesung_teuflische_folge()
 {
     int number;

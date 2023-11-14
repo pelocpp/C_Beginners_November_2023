@@ -18,10 +18,19 @@
     <ClCompile Include="Program.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Solutions_Exercises.c">
+    <ClCompile Include="Loesungen.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Unterprogramme.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="If_Anweisung.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="While_Anweisung.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Erste_Schritte.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

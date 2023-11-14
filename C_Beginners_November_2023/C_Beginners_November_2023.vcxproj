@@ -127,9 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Erste_Schritte.c" />
+    <ClCompile Include="If_Anweisung.c" />
     <ClCompile Include="Program.c" />
-    <ClCompile Include="Solutions_Exercises.c" />
+    <ClCompile Include="Loesungen.c" />
     <ClCompile Include="Unterprogramme.c" />
+    <ClCompile Include="While_Anweisung.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyFunctions.h" />
