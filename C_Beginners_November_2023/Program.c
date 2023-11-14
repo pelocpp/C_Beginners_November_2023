@@ -1,23 +1,28 @@
 #include <stdio.h>  // für die System-Bibliothek:  printf
 
+#include "MyFunctions.h"
+
 // "Hello World"
 // void main()
 // {
 //     printf("Hallo Seminar");
 // }
 
-#include "MyFunctions.h"
-
-
 void main ()
 {
-    // wie oft wird der Begrüßungstext ausgegeben:
-    // möchte ich dem Unterprogramm mitgeben
+    loesung_feld_mit_gesamt_summe();
+    printf("\n\n");
+    loesung_feld_mit_maximum();
+}
 
-    eineZufallszahl();
 
-    return;
 
+
+
+
+
+void main_aufruf_function_mit_ergebnis()
+{
     int count = -3;
 
     myGoodMorning(count);   // Aufruf eines Unterprogramms
@@ -27,7 +32,7 @@ void main ()
     int ergebnis = 0;
 
     ergebnis = malDrei(5); // brauche eine Wertzuweisung,
-                           // um das Ergebnis abzuholen !
+    // um das Ergebnis abzuholen !
 
     printf("malDrei(5) ==> %d\n", ergebnis);
 
@@ -35,7 +40,6 @@ void main ()
 
     // printf("==> %d\n", ergebnis);
 }
-
 
 
 void tueWasAnderes()

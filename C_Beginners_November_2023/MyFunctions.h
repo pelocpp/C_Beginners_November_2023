@@ -17,3 +17,6 @@ extern        void tueEtwas();
 extern        void felder_01();
 
 extern        void eineZufallszahl();
+
+extern        void loesung_feld_mit_gesamt_summe();
+extern        void loesung_feld_mit_maximum();

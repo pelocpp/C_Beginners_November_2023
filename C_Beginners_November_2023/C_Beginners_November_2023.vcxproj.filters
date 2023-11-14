@@ -18,7 +18,7 @@
     <ClCompile Include="Program.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Loesungen.c">
+    <ClCompile Include="Loesungen_Erste_Schritte.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Unterprogramme.c">
@@ -34,6 +34,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Felder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Loesungen_Felder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Loesungen_Unterprogramme.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

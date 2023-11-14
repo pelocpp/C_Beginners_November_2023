@@ -130,8 +130,10 @@
     <ClCompile Include="Erste_Schritte.c" />
     <ClCompile Include="Felder.c" />
     <ClCompile Include="If_Anweisung.c" />
+    <ClCompile Include="Loesungen_Felder.c" />
+    <ClCompile Include="Loesungen_Unterprogramme.c" />
     <ClCompile Include="Program.c" />
-    <ClCompile Include="Loesungen.c" />
+    <ClCompile Include="Loesungen_Erste_Schritte.c" />
     <ClCompile Include="Unterprogramme.c" />
     <ClCompile Include="While_Anweisung.c" />
   </ItemGroup>
