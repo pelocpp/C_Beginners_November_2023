@@ -1,4 +1,6 @@
-#include <stdio.h>  // für die System-Bibliothek:  printf
+#include <stdio.h>    // printf
+#include <stdlib.h>   // srand
+#include <time.h  >   // time
 
 void felder_01()
 {
@@ -21,14 +23,41 @@ void felder_01()
     lotto_zahlen[5] = 34;  // "sechtes Element"
 
     // Ein Feld durchlaufen
-
     // Two - in - One // Buy One - Get Two
-
     // Kontrollstruktur:  while // for
 
-    for (int i = 0; i < 6;  i = i + 1)
+    for ( int i = 0; i < 6;  i = i + 1 )
     {
-        printf("%d: %d\n", i, lotto_zahlen [i]);
+        printf("%d: %d\n", i+1, lotto_zahlen [i]);
     }
+}
 
+void eineZufallszahl()
+{
+    int zufall;
+
+    // Wie bekomme ich verschiedene Startwerte hin
+
+    //// Black-Box
+    //time_t t;
+    //int jetzt = (int) time(&t);  // ich frage die Uhr  // milli sekunden
+
+    //// Wie bekomme ich wirklich zufällige Zahlen hin - von Aufruf zu Aufruf
+    //srand(jetzt);  // Dies ist ein "Startwert" für die Berechnung zufälliger Zahlen
+
+    zufall = rand();   // 1. Aufruf
+
+    // zahl auf den Bereich von 0 bis 100 abbilden
+    zufall = zufall % 100;
+    printf("Zufallszahl %d\n", zufall);
+
+    zufall = rand();   // 2. Aufruf
+    zufall = zufall % 100;
+    printf("Zufallszahl %d\n", zufall);
+
+    for (int i = 0; i < 20; i = i + 1) {
+        zufall = rand();
+        zufall = zufall % 100;
+        printf("Zufallszahl %d\n", zufall);
+    }
 }

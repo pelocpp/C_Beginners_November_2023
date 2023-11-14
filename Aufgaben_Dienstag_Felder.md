@@ -1,10 +1,10 @@
 # Aufgaben zu Feldern
 
-### Aufgabe 1 - Größte Zahl in einem Feld
+### Aufgabe 1 - Ein Feld mit Zufallszahlen belegen
 
 Belegen Sie ein Feld der Länge 10
 mit zufällig erzeugten ganzen Zahlen
-im Bereich von 0 bis 100 an.
+im Bereich von 0 bis 100 vor.
 
 Geben Sie das Feld auf der Konsole aus.
 
@@ -16,7 +16,7 @@ Berechnen Sie die Summe aller Elemente des Felds
 
 Belegen Sie ein Feld der Länge 10
 mit zufällig erzeugten ganzen Zahlen
-im Bereich von 0 bis 100 an.
+im Bereich von 0 bis 100 vor.
 
 Geben Sie das Feld auf der Konsole aus.
 

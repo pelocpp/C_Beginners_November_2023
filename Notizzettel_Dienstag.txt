@@ -234,9 +234,9 @@ for - Wiederholungsschleife:
 
 3 Teile:
 
-a) Initialwert:  int i = 0;
+a) Initialwert:  int i = 0;     EINMAL
 
-b) Bedingung:    i < 10
+b) Bedingung:    i < 10:        Als ZWEITES ...
 
 c) Schleifenindex ändern:  i = i + 1
 
@@ -249,3 +249,5 @@ Weiterarbeit mit Arrays.
 Pause:  
 
 Aktive Pause // Passive Pause:
+
+

@@ -14,7 +14,7 @@ void main ()
     // wie oft wird der Begrüßungstext ausgegeben:
     // möchte ich dem Unterprogramm mitgeben
 
-    felder_01();
+    eineZufallszahl();
 
     return;
 
