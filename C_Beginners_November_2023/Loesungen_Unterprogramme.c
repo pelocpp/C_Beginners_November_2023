@@ -18,6 +18,7 @@ int isEven(int wert)
     return result;  // 0 oder 1 wird als Ergebnis zurückgegeben
 }
 
+// ============================================================
 
 int maximum (int a, int b)
 {
@@ -30,3 +31,93 @@ int maximum (int a, int b)
         return b;
     }
 }
+
+int maximum3(int a, int b, int c)
+{
+    if (a >= b && a >= c) {
+        return a;
+    }
+    else if (b >= a && b >= c) {
+        return b;
+    }
+    else {
+        return c;
+    }
+}
+
+void test_maximum()
+{
+    int x = 123; 
+    int y = 456;
+    int z = 789;
+
+    int result = maximum(x, y);
+
+    printf("maximum(123, 456) ==> %d\n", result);
+
+    result = maximum3(x, y, z);
+
+    printf("maximum3(x, y, z) ==> %d\n", result);
+}
+
+// ============================================================
+
+int wieOft(int zahl, int teiler)
+{
+    int result = 0;
+
+    while (zahl % teiler == 0) {
+
+        zahl = zahl / teiler;
+        result = result + 1;
+    }
+
+    return result;
+}
+
+void test_wieOft()
+{
+    int result = wieOft(36, 3);
+
+    printf("wieOft(36, 3) = %d\n", result);
+}
+
+
+// ============================================================
+
+long long fakultaet(int n)
+{
+    int i;
+    long long result;
+
+    result = 1;
+    for (i = 2; i <= n; i++) {
+        result *= i;
+    }
+
+    return result;
+}
+
+void test_fakultaet()
+{
+    int n = 5;
+
+    long long fakul_5 = fakultaet(n);
+
+    printf("%d! = %lld\n", n, fakul_5);
+
+    // ================================
+
+    for (int i = 1; i <= 30; ++i) {
+
+        long long result = fakultaet(i);
+
+        //if (i == 25)
+        //    printf("Stopper\n");
+
+        printf("%d! = %lld\n", i, result);
+    }
+}
+
+// ============================================================
+

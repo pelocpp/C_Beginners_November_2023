@@ -10,15 +10,14 @@
 
 void main ()
 {
+    test_wieOft();
+    test_maximum();
+    test_fakultaet();
+
     loesung_feld_mit_gesamt_summe();
     printf("\n\n");
     loesung_feld_mit_maximum();
 }
-
-
-
-
-
 
 
 void main_aufruf_function_mit_ergebnis()
