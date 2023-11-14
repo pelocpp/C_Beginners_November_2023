@@ -13,3 +13,5 @@ extern        int malDrei(int wert);
 
 extern        void tueWasAnderes();
 extern        void tueEtwas();
+
+extern        void felder_01();

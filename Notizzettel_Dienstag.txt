@@ -157,21 +157,6 @@ Anmerkung: Das kann mit und ohne Wert sein.
 ===================================================
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Unterprogrammen:
 
 Es gibt "SORTEN / ARTEN" von Unterprogrammen:
@@ -182,3 +167,85 @@ ii)  Welche, die kein Ergebnis berechnen
 
 ===================================================
 
+
+"12312312312312312312312312213312" + "9999999999999999999999999999999999"
+
+Dynamische Speicherverwaltung
+
+
+===================================================
+
+Vorgehensweise:
+
+== Etwas neuer Stoff:  Felder
+
+== Pause: 14.55 
+
+== Üben:  Unterprogrammen  // Feld.
+
+===================================================
+
+== Kontrollstukturen
+
+== Unterprogramme
+
+== Feld / Array
+
+===================================================
+
+Feld:
+
+Was ist ein Feld ???
+
+int value; // ist EINE Variable
+
+Ziehung der Lottozahlen:
+
+==> 6 Zahlen.
+
+int zahl1;
+int zahl2;
+int zahl3;
+int zahl4;
+int zahl5;
+int zahl6;         // Ginge
+
+We can do better:
+
+Um mehrere Variablen desselben Typs (eg Lotto: 6 Numbers of type int),
+
+kann man diese in einem sog. Feld ablegen:
+
+Syntax:
+
+    int name[6];   // 6 == Länge
+
+
+    // Vorsicht:
+
+// C99 -- Dialekt von C
+int n = 100;  // Könnte auch von der Konsole eingelesen werden
+int messreihe[n]; // LEIDER: NOOOOOOOOOOOOOOOOOOOOOOOOO
+
+
+Nebenbei:  
+
+for - Wiederholungsschleife:
+
+3 Teile:
+
+a) Initialwert:  int i = 0;
+
+b) Bedingung:    i < 10
+
+c) Schleifenindex ändern:  i = i + 1
+
+TO DO:
+
+for: Genauer im Ablauf erklären !!!
+
+Weiterarbeit mit Arrays.
+
+Pause:  
+
+Aktive Pause // Passive Pause:

@@ -8,10 +8,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AEA04F97-1D1E-4403-A11A-D864B1600CC9}"
 	ProjectSection(SolutionItems) = preProject
 		Aufgaben_Dienstag.md = Aufgaben_Dienstag.md
-		Notizzettel.txt = Notizzettel.txt
 		Aufgaben_Montag.md = Aufgaben_Montag.md
+		Aufgaben_Dienstag_Felder.md = Aufgaben_Dienstag_Felder.md
+		Notizzettel.txt = Notizzettel.txt
 		Notizzettel_Dienstag.txt = Notizzettel_Dienstag.txt
-		Notizzettel_Dienstag_Felder.md = Notizzettel_Dienstag_Felder.md
 		Schaltjahr.jpg = Schaltjahr.jpg
 		Variable.png = Variable.png
 	EndProjectSection

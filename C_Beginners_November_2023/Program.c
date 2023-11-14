@@ -14,6 +14,10 @@ void main ()
     // wie oft wird der Begrüßungstext ausgegeben:
     // möchte ich dem Unterprogramm mitgeben
 
+    felder_01();
+
+    return;
+
     int count = -3;
 
     myGoodMorning(count);   // Aufruf eines Unterprogramms
