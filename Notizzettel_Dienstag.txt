@@ -88,7 +88,7 @@ Beispiel: error LNK2019:  LNK ==> Linker
 
 ===================================================
 
-Unterprogrammen:
+Unterprogramme:
 
 Es gibt die Möglichkeit, Informationen einem 
 Unterprogramm mitzugeben:
@@ -117,10 +117,42 @@ c) KOMMT NOCH: Der Rückgabetyp
 
 ===================================================
 
+Unterprogramme:
 
 i)   Welche, die ein Ergebnis berechnen
 
 ii)  Welche, die kein Ergebnis berechnen
+
+Nomenklatur:
+
+Unterprogramm, Prozedur, Procedure, Function, Subfunction, Funktion
+
+In den meisten Programmiersprachen:
+
+i) Procedure: Unterprogramm ohne Ergebnis
+
+   void myGoodMorning(int wieOft);
+
+ii) Function: Unterprogramm mit Ergebnis
+
+
+    Der Typ des Ergbnisses muss vor dem Namen der Funktion stehen !
+
+
+    int malDrei(int wert);   // Rückgabetyp
+
+
+Anmerkung:
+
+In Prozeduren (also Unterprogramm ohne Ergebnis)
+kann auch 'return' verwendet werden.
+
+'return' ist eine Anweisung (Statement):
+
+Mit return wird ein Unterprogramm verlassen.
+
+Anmerkung: Das kann mit und ohne Wert sein.
+
 
 ===================================================
 

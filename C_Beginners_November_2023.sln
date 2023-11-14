@@ -7,8 +7,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "C_Beginners_November_2023",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AEA04F97-1D1E-4403-A11A-D864B1600CC9}"
 	ProjectSection(SolutionItems) = preProject
-		Aufgabe_01.md = Aufgabe_01.md
+		Aufgaben_Dienstag.md = Aufgaben_Dienstag.md
 		Notizzettel.txt = Notizzettel.txt
+		Aufgaben_Montag.md = Aufgaben_Montag.md
 		Notizzettel_Dienstag.txt = Notizzettel_Dienstag.txt
 		Schaltjahr.jpg = Schaltjahr.jpg
 		Variable.png = Variable.png

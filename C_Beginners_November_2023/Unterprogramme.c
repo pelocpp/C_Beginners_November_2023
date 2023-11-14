@@ -8,13 +8,14 @@ void myTitle()
     printf("... aber wir schaffen das\n");
 }
 
-void myGoodMorning(int wieOft)
+void myGoodMorning(int wieOft)   // -5
 {
-    //printf("Hallo Seminar\n");
-    //printf("Hallo Seminar\n");
-    //printf("Hallo Seminar\n");
-    //printf("Hallo Seminar\n");
-    //printf("Hallo Seminar\n");
+    if (wieOft < 0) {
+
+        printf("Falscher Parameter Wert: %d\n", wieOft);
+
+        return;  // Anweisung
+    }
 
     int counter = 0;
 
@@ -28,5 +29,15 @@ void myGoodMorning(int wieOft)
 
 // =========================================================
 
-// Beispiel für ein Unterprogramm, das ein Ergebnis berechnet:
+// Beispiel für ein Unterprogramm,
+// das ein Ergebnis berechnet:
+// mit 'return' wird der berechnete Wert zurückgegeben
 
+int malDrei(int wert)
+{
+    int result;  
+
+    result = wert * 3;
+
+    return result;
+}

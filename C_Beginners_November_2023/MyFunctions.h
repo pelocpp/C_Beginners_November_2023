@@ -8,3 +8,8 @@
 extern        void myTitle();
 
 extern        void myGoodMorning(int wieOft);
+
+extern        int malDrei(int wert);
+
+extern        void tueWasAnderes();
+extern        void tueEtwas();
