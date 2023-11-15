@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// Unterprogramm ==> Funktion
 int isEven(int wert)
 {
     int result;
@@ -66,10 +67,14 @@ int wieOft(int zahl, int teiler)
 {
     int result = 0;
 
+    // zahl = 7 // teiler = 3  ===> zahl % teiler = 1 
     while (zahl % teiler == 0) {
 
         zahl = zahl / teiler;
-        result = result + 1;
+        
+        // result = result + 1;
+    
+        ++ result;  // ++: erhöht die Variable 'result' um 1
     }
 
     return result;
@@ -77,9 +82,11 @@ int wieOft(int zahl, int teiler)
 
 void test_wieOft()
 {
-    int result = wieOft(36, 3);
+    int ergebnis = wieOft(36, 3);
+    printf("wieOft(36, 3) = %d\n", ergebnis);
 
-    printf("wieOft(36, 3) = %d\n", result);
+    ergebnis = wieOft(7, 3);
+    printf("wieOft(36, 3) = %d\n", ergebnis);
 }
 
 

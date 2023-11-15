@@ -24,3 +24,5 @@ extern        void eineZufallszahl();
 
 extern        void loesung_feld_mit_gesamt_summe();
 extern        void loesung_feld_mit_maximum();
+
+extern        void test_Time();

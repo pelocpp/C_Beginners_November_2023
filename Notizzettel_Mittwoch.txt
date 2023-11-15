@@ -1,0 +1,89 @@
+============================
+
+C für Einsteiger
+
+Mittwoch
+
+============================
+
+== Übungen
+
+== Strukturen
+
+== "Echtes C":  Datentyp Zeiger  // ab dem Nachtmittag
+
+== Übungen ...
+
+============================
+
+Markdown 
+
+============================
+
+Variablen:
+
+Plural // Mehrere Variablen / Daten
+
+Feld: Array   ==> mehrere Variablen DESSELBEN Typs
+
+Andere Überlegung:
+
+Wie gehe ich damit um, wenn die Daten unterschiedlichen Typs sind
+
+Student // Person:
+
+Name:  ==> Zeichenkette
+
+Alter: ==> Alter // int
+
+Geschlecht: ==> char ch;   ch = 'm'  / 'f' 
+
+Wie kann man Daten unterschiedlichen Typs, die aber zusammengehören,
+unter einem gemeinsamen Konstrukt zusammenfassen?
+
+Sprachmittel: Struktur  // struct
+
+Besteht aus mehreren Elementen.
+
+Wie wird auf diese Elemente zugegriffen: Punkt-Operator.
+
+// ====> OO:  Klasse 
+
+Schlüsselwort: struct     // C, C++, ...., Python, ...
+
+Anderes Beispiel:  Uhrzeit
+
+00:00:00 bis 23:59:59
+
+int hours;
+int minute;
+int second;
+
+Zweite Uhrzeit:
+
+int hours2;
+int minute2;
+int second2;
+
+We can do better:
+
+SYNTAX:
+
+'struct' NameDerStruktor 
+{
+
+};
+
+
+Welchen Vorteil habe ich, bestimmte Tätigkeiten (Ausgabe)
+in ein Unterprogramm zu verschieben?
+
+==> Sind Änderungen notwendig, sind diese nur an einer EINZIGEN Stelle
+    zu tätigen (das Unterprogramm)
+
+==> How to structure a bigger program: 
+
+    Use sub-routines (function, procedure)
+
+
+    10:45 
