@@ -56,8 +56,8 @@ Wir betrachten in dieser Aufgabe einen Geldbetrag mit Euros und Cent.
 ```
 struct Money
 {
-   int euros;
-   int cent;
+   int euros;   // Greater 0 !!!
+   int cent;    // 0 .. 99 is a valid value 
 };
 ```
 
@@ -65,11 +65,23 @@ Schreiben sie folgende Funktionen:
 
 
 ```
-void print(struct Money& money);
-void addEuros(struct Money& money);
-void addCent(struct Money& money);
-void add(struct Money& money);
-void compare(struct Money& money1, struct Money& money2);
+void print(struct Money* money);
+void addEuros(struct Money* money, int euros);
+void addCent(struct Money* money, int cent);
+void add(struct Money* money, struct Money* other);
+void compare(struct Money* money1, struct Money* money2);
 ```
+
+Bemerkungen:
+
+
+Okay, `print` ginge auch mit dem Datentyp `struct Money`:
+
+```
+void print(struct Money money);
+```
+
+Aber zum Beispiel `addEuros` muss als ersten Parameter einen Datentyp
+`struct Money*` haben, also einen Zeigerdatentyp.
 
 

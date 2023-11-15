@@ -119,3 +119,20 @@ Dennies Richtie:  Inventor of C
 
 "A Programmer knows what he does"   :-)))))))))))))))))))))))
 
+========================================================================
+
+Datentypen:
+
+int, long
+
+double, float
+
+char
+
+Geldbeträge (Currency)
+
+a) Try:  How about: Sparkasse // Kontostand // balance // double balance;
+
+b) Money:
+
+
