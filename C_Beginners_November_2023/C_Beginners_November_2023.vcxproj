@@ -131,6 +131,7 @@
     <ClCompile Include="Felder.c" />
     <ClCompile Include="If_Anweisung.c" />
     <ClCompile Include="Loesungen_Felder.c" />
+    <ClCompile Include="Loesungen_Struct_Time.cpp" />
     <ClCompile Include="Loesungen_Unterprogramme.c" />
     <ClCompile Include="Program.c" />
     <ClCompile Include="Loesungen_Erste_Schritte.c" />
