@@ -131,6 +131,7 @@
     <ClCompile Include="Felder.c" />
     <ClCompile Include="If_Anweisung.c" />
     <ClCompile Include="Loesungen_Felder.c" />
+    <ClCompile Include="Loesungen_Struct_Money.c" />
     <ClCompile Include="Loesungen_Struct_Time.c" />
     <ClCompile Include="Loesungen_Unterprogramme.c" />
     <ClCompile Include="Operators.c" />
@@ -143,6 +144,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyFunctions.h" />
+    <ClInclude Include="MyMoney.h" />
     <ClInclude Include="MyTime.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

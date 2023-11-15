@@ -65,11 +65,12 @@ Schreiben sie folgende Funktionen:
 
 
 ```
-void print(struct Money* money);
+void printMoney(struct Money* money);
+void setMoney(struct Money* money, int euros, int cent);
 void addEuros(struct Money* money, int euros);
 void addCent(struct Money* money, int cent);
-void add(struct Money* money, struct Money* other);
-void compare(struct Money* money1, struct Money* money2);
+void addMoney(struct Money* money, struct Money* other);
+int sameMoney(struct Money* money1, struct Money* money2);
 ```
 
 Bemerkungen:
@@ -83,5 +84,4 @@ void print(struct Money money);
 
 Aber zum Beispiel `addEuros` muss als ersten Parameter einen Datentyp
 `struct Money*` haben, also einen Zeigerdatentyp.
-
 

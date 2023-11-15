@@ -1,6 +1,5 @@
 #include <stdio.h>  // für die System-Bibliothek:  printf
 
-
 void erste_Schritte_if_statement()
 {
     int n = 0;  // Varianblen vereinbaren und vorbelegen
@@ -20,7 +19,6 @@ void erste_Schritte_if_statement()
 
     printf("hier geht es weiter\n");
 }
-
 
 void erste_Schritte_if_statement_02()
 {

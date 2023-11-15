@@ -54,12 +54,18 @@
     <ClCompile Include="Operators.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Loesungen_Struct_Money.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyFunctions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MyTime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyMoney.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -40,7 +40,6 @@ void erste_Schritte_02()
     printf("Zahl = %f\n", x);  // %f: Ausgabe Gleitpunkt, 3 Nachkommastellen
 }
 
-
 void erste_Schritte_ueberlauf()
 {
     int grosseZahl;

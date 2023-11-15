@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 // Ansatz: Maximum dreier Zahlen
 
 void erste_Schritte_aufgabe_maximum()

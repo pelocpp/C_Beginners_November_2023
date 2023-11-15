@@ -32,3 +32,5 @@ extern        void testSindGleich();
 extern        void testTimeAddition();
 
 extern        void test_Zeiger();
+
+extern        void testMoney();
