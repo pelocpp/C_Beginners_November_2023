@@ -25,13 +25,42 @@ void printTime(struct Time time)
         time.hours, time.minutes, time.seconds);
 }
 
+
+void setTime(struct Time time, int hours, int minutes ,int seconds) {
+
+    time.hours = hours;
+    time.minutes = minutes;
+    time.seconds = seconds;
+}
+
+void setTimeEx (struct Time* ptime, int hours, int minutes, int seconds) {
+
+    //time.hours = hours;
+    //time.minutes = minutes;
+    //time.seconds = seconds;
+
+    // 1. Schreibweise
+
+    // (*ptime).hours = hours;  // korrekt
+
+    ptime -> hours = hours;  // okay, besser lesbar
+    ptime->minutes = minutes;  
+    ptime->seconds = seconds; 
+}
+
 void test_Time()
 {
     struct Time jetzt;    // Strukturvariable
 
-    jetzt.hours = 10;     // Element einer Struktur
-    jetzt.minutes = 5;
-    jetzt.seconds = 30;
+    jetzt.hours = 1;     // Element einer Struktur
+    jetzt.minutes = 2;
+    jetzt.seconds = 3;
+
+    setTimeEx(&jetzt, 13, 30, 0);
+
+    printTime(jetzt);
+
+    return;
 
     struct Time pause;
     pause.hours = 10;

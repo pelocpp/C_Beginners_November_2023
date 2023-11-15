@@ -30,3 +30,5 @@ extern        void test_Time();
 extern        void testSindGleich();
 
 extern        void testTimeAddition();
+
+extern        void test_Zeiger();

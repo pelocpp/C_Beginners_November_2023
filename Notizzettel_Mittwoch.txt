@@ -86,4 +86,36 @@ in ein Unterprogramm zu verschieben?
     Use sub-routines (function, procedure)
 
 
-    10:45 
+========================================================================
+
+Übergabe von Parametern:
+
+Strategie:   Call-by-Value   (  Call-by-Copy ) 
+
+
+2 Slots // 2 Datenbereiche:
+
+1. Slot: "Original" Data Area
+
+2. Slot: "Function Copy": Holds a copy of the Original
+
+
+
+Wie kann ich mein Ziel erreichen,
+dass in einer Funktion ÄNDERUNGEN am Original erreicht werden ???
+
+Wie: Man kann an Stelle eine VARIABLEN die ADRESSE EINER VARIABLEN
+     übergeben.
+
+
+// SPRACH FEATURES:  Bestimmte Hardware-Adressen in 
+                     ein C Programm zu bekommen.
+
+====================================================
+
+Why this is ony a warning  ???
+
+Dennies Richtie:  Inventor of C
+
+"A Programmer knows what he does"   :-)))))))))))))))))))))))
+

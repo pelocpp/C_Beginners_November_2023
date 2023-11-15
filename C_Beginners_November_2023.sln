@@ -11,11 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Aufgaben_Dienstag_Felder.md = Aufgaben_Dienstag_Felder.md
 		Aufgaben_Mittwoch_Strukturen.md = Aufgaben_Mittwoch_Strukturen.md
 		Aufgaben_Montag.md = Aufgaben_Montag.md
+		cpp_Time_call_by_value.png = cpp_Time_call_by_value.png
 		Notizzettel_Dienstag.txt = Notizzettel_Dienstag.txt
 		Notizzettel_Mittwoch.txt = Notizzettel_Mittwoch.txt
-		Schaltjahr.jpg = Schaltjahr.jpg
 		Notizzettel_Montag.txt = Notizzettel_Montag.txt
+		Schaltjahr.jpg = Schaltjahr.jpg
 		Variable.png = Variable.png
+		Zinsen.png = Zinsen.png
 	EndProjectSection
 EndProject
 Global

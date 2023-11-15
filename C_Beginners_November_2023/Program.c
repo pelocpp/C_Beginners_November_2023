@@ -10,7 +10,7 @@
 
 void main ()
 {
-    testTimeAddition();
+    test_Time();
 }
 
 

@@ -18,6 +18,10 @@ int equal(struct Time t1, struct Time t2)
     }
 }
 
+
+
+//  08:40:30  und 07:50
+
 int lessThan(struct Time t1, struct Time t2)
 {
     if (t1.hours < t2.hours) {
@@ -42,6 +46,11 @@ struct Time add(struct Time t1, struct Time t2)
     ergebnis.minutes = t1.minutes + t2.minutes;
     ergebnis.seconds = t1.seconds + t2.seconds;
 
+    // Die Uhrzeit begradigen // Überlauf // Overflow // normalize
+
+    // 17:40:50 add 17:40:50  ===> 34:80:100 
+    // ==> 34:81:40 ==> 34:81:40 ==> 35:21:40 ==> 21:21:40
+
     if (ergebnis.seconds >= 60) {
         ergebnis.seconds = ergebnis.seconds - 60;
         ergebnis.minutes = ergebnis.minutes + 1;
@@ -53,7 +62,7 @@ struct Time add(struct Time t1, struct Time t2)
     }
 
     if (ergebnis.hours >= 24) {
-        ergebnis.hours = 0;
+        ergebnis.hours = ergebnis.hours - 24;
     }
 
     return ergebnis;

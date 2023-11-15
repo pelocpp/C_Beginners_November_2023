@@ -45,7 +45,13 @@
     <ClCompile Include="Strukturen.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Loesungen_Struct_Time.cpp">
+    <ClCompile Include="Loesungen_Struct_Time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Zeiger.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Operators.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

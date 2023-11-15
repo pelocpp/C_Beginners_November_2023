@@ -48,3 +48,28 @@ Beispiel:
 `09:30:00` plus `05:30:00` = `15:00:00`.
 
 
+
+### Aufgabe 4 - Struktur `Money`
+
+Wir betrachten in dieser Aufgabe einen Geldbetrag mit Euros und Cent.
+
+```
+struct Money
+{
+   int euros;
+   int cent;
+};
+```
+
+Schreiben sie folgende Funktionen:
+
+
+```
+void print(struct Money& money);
+void addEuros(struct Money& money);
+void addCent(struct Money& money);
+void add(struct Money& money);
+void compare(struct Money& money1, struct Money& money2);
+```
+
+
