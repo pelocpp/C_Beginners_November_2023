@@ -71,6 +71,10 @@ void addEuros(struct Money* money, int euros);
 void addCent(struct Money* money, int cent);
 void addMoney(struct Money* money, struct Money* other);
 int sameMoney(struct Money* money1, struct Money* money2);
+int lessThanMoney(struct Money* money1, struct Money* money2);
+
+// Bonus-Aufgabe :)
+void subMoney(struct Money* money, struct Money* other);
 ```
 
 Bemerkungen:

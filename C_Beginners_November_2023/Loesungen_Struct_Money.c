@@ -126,30 +126,12 @@ void subMoney(struct Money* money, struct Money* other)
     setMoney(money, euros, cent);
 }
 
-
-//void subEuros(struct Money* money, int cent)
-//{
-//    if (euros > money->euros) {
-//        printf("Not enough Euros in Wallet!\n");
-//        return;
-//    }
-//
-//    money->euros = money->euros - euros;
-//}
-
-//void subEuros(struct Money* money, int euros);
-//void subCent(struct Money* money, int cent);
-//void subMoney(struct Money* money, struct Money* other);
-
-
-
-
 // =====================================================
-// test function
+// test functions
 
 void testMoney_01()
 {
-    struct Money wallet;
+    struct Money wallet = { 0, 0 };;
 
     setMoney(&wallet, -10, 50);
     printMoney(&wallet);
@@ -307,12 +289,11 @@ void testMoney_04()
     printf("lessThanMoney ==> %d\n", ergebnis);
 }
 
-
 void testMoney()
 {
-    //testMoney_01();
-    //testMoney_02();
-    //testMoney_03();
+    testMoney_01();
+    testMoney_02();
+    testMoney_03();
     testMoney_04();
 }
 
