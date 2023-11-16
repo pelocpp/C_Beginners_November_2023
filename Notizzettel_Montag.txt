@@ -4,9 +4,42 @@ C für Einsteiger
 
 Peter Loos / "Du"
 
-Guten Morgen
+Guten Abend
+
+peter.loos@gmx.de
 
 ============================
+
+
+John R. Hubbard
+
+C++-Programmierung (IT-Studienausgabe) Taschenbuch – 1. Januar 2003
+
+
+============
+
+Literatur:
+
+Deitel / Deitel "How to programm C"
+
+============
+
+Objektorientierte Programmierung mit ANSI C Gebundene Ausgabe – 25. Oktober 1994
+
+von Axel-Tobias Schreiner (Autor)
+
+Alle Formate und Editionen anzeigen
+Gebundenes Buch
+
+69,90 € 
+
+1 Gebraucht ab 69,90 €
+
+Der Autor zeigt, wie auch mit ANSI-C objektorientiert programmiert werden kann, welche Techniken verwendet werden, wieso sie helfen, größere Probleme zu lösen, wie man Allgemeingültigkeit in den Griff bekommt und wie man programmiert, um Fehler früher zu erkennen.
+
+============
+
+
 
 Wie gestalte ich diesen Kurs?
 

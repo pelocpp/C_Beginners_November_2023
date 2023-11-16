@@ -17,6 +17,7 @@ void setMoney(struct Money* money, int euros, int cent) {
         return;
     }
 
+    // &&, ||  , NEU: ! ist logische Negierung: logical Not
     if ( ! ( cent >= 0 && cent < 100 ) ) {
         printf("Cent value between 0 and 99 expected!\n");
         return;
@@ -26,13 +27,18 @@ void setMoney(struct Money* money, int euros, int cent) {
     money->cent = cent;
 }
 
+// NO: bool, true, false
+// C++ // ANSI C:
+// Real-C: int:  0 == false, 1 == true
+// Precisely: Each value UNEQUAL 0 is considered as true 
+
 int sameMoney(struct Money* m1, struct Money* m2)
 {
     if (m1->euros == m2->euros && m1->cent == m2->cent) {
-        return 1;
+        return 1;  // true
     }
     else {
-        return 0;
+        return 0;  // false
     }
 }
 
@@ -56,6 +62,9 @@ void addEuros(struct Money* money, int euros)
     money->euros = money->euros + euros;
 }
 
+// a) 350 cent  ==> 3 euros , 50 cent
+// b) Current wallet / money: 70 cent + 50 cent = 120 cent
+//      1 euro , 20 cent
 void addCent(struct Money* money, int cent)
 {
     // convert cent to euros and remaining cent
@@ -65,6 +74,7 @@ void addCent(struct Money* money, int cent)
     }
 
     int euros = cent / 100;
+
     money->euros = money->euros + euros;
 
     int partialCent = cent % 100;
@@ -84,7 +94,7 @@ void addMoney(struct Money* money, struct Money* other)
     int euros = other->euros;
     int cent = other->cent;
 
-    addEuros(money, euros);
+    addEuros(money, euros);  // calling another fuction 
     addCent(money, cent);
 }
 

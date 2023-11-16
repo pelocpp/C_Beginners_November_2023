@@ -127,6 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ContactsApp.c" />
+    <ClCompile Include="Data.c" />
+    <ClCompile Include="Data_02.c" />
     <ClCompile Include="Erste_Schritte.c" />
     <ClCompile Include="Felder.c" />
     <ClCompile Include="If_Anweisung.c" />
@@ -140,9 +143,11 @@
     <ClCompile Include="Strukturen.c" />
     <ClCompile Include="Unterprogramme.c" />
     <ClCompile Include="While_Anweisung.c" />
+    <ClCompile Include="Zeichen_Zeichenketten.c" />
     <ClCompile Include="Zeiger.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MyContacts.h" />
     <ClInclude Include="MyFunctions.h" />
     <ClInclude Include="MyMoney.h" />
     <ClInclude Include="MyTime.h" />

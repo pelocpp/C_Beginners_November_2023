@@ -34,3 +34,11 @@ extern        void testTimeAddition();
 extern        void test_Zeiger();
 
 extern        void testMoney();
+
+extern        void test_data();
+
+extern        void useGlobaleVariable();
+
+extern        void test_characters();
+
+extern        void test_Contacts();

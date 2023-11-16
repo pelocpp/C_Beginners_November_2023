@@ -6,6 +6,9 @@ void malZwei( int value )
     value = 2 * value;
 }
 
+
+
+
 void malZweiEx(int* pvalue)   // int* ==> address of an int
 {
     int tmp;
@@ -38,6 +41,8 @@ void malZweiExEX(int* pvalue)   // int* ==> address of an int
     *pvalue = 2 * *pvalue;
 }
 
+extern int globalVariable;
+
 void test_Zeiger()
 {
     int x = 5;
@@ -51,5 +56,7 @@ void test_Zeiger()
     malZweiEx(&x); // '&' means: the address of 'x' is passed as argument
 
     printf("x = %d\n", x);     // 5 
+
+    globalVariable = globalVariable + 1;
 }
 

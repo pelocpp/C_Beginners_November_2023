@@ -2,6 +2,9 @@
 
 #include "MyFunctions.h"
 
+int globalVariable = 123;  // init value necessary
+
+
 // "Hello World"
 // void main()
 // {
@@ -10,7 +13,7 @@
 
 void main ()
 {
-    testMoney();
+    test_Contacts();
 }
 
 

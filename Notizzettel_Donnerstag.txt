@@ -1,0 +1,358 @@
+============================
+
+C für Einsteiger
+
+Donnerstag
+
+============================
+
+Daten eines C-Programms:
+
+== Globales Daten
+== Lokale Daten
+== Dynamische Daten
+
+
+a) Lokale Daten
+
+   Gibt es innerhalb von Unterprogrammen.
+
+   Was kann ich damit anfangen ???
+
+   Speicherung von Zwischenergebnissen.
+
+   Zur Rückgabe (return) von berechneten Werten.
+
+b) Globale Daten
+
+   "Skalieren schlecht" ==> Hmm, Speicherplatz wird die GESAMTE Laufzeit 
+   des Programms belegt.
+
+
+
+   Wird auf der "obersten" Ebene vereinbart.
+
+   Eigenschaft: Globale Variablen können ÜBERALL im Programm
+      gelesen als auch geschrieben (verändert) werden.
+
+   Es ist ein Vorbelegungswert NOTWENDIG.
+
+   i) Definition:
+
+   int globalVariable = 123;  // init value necessary
+
+   ii) Gebrauch - zB in einer anderen Datei:
+
+   extern int globalVariable; 
+
+Bewertung:
+Wollen wir mit globalen Variablen arbeiten
+oder nicht???
+
+Welche Vor- und Nachteile haben globale Variablen ???
+
+Beispiel:
+
+Spiel: Tic-Tac-Toe // Brettspiel // Schach 
+
+Tetris
+
+Spielbrett // board // game_board:
+
+Durchaus / im Regelfall eine globale Variable
+
+Konventionen:
+
+Namensgebung: 
+
+int g_globalVariable = 123;  // init value necessary
+
+g_ ==> global
+
+C++:
+
+Klassen : m_data  // member
+
+C) Dynamischen Daten
+
+Vorteil:
+
+Leben solange wie ich sie benötige !!!
+
+i)  Ich muss sie anlegen, wenn ich sie benötige
+ii) Ich muss sie freigeben, wenn ich sie NICHT mehr benötige
+
+Doing?
+
+i) "anlegen": Funktion der Bibliothek: Speicher anlegt / allokiert
+
+   malloc // memory allocate
+
+ii) "freigeben":  Funktion der Bibliothek: Speicher freigibt
+
+   free
+
+Was liefert malloc zurück ????
+
+Beispiel:
+
+Ich brauche Speicher für
+
+== 1 int
+== 10 int-Variablen
+== Eine Money-Struktur
+== 10 Money-Strukturen
+== ....................
+
+Wir erkennen: Nicht so einfach, alles sehr unterschiedlich.
+
+Lösung: Rudimentär: Wir kommunizieren mit malloc nur in der Angabe von "Bytes"
+
+Hmmm: Wie komme ich von 
+
+== 1 int
+== 10 int-Variablen
+== Eine Money-Struktur
+== 10 Money-Strukturen
+
+zu Anzahl Bytes: sizeof:    Beliebigen Typ ===> Anzahl Bytes
+
+2. Frage: Was liefert malloc zurück ????   ADRESSE  ( Zeiger, Pointer )
+
+Eine Adresse MUSS in C aber einen Typ haben:  zb int*
+
+Hmm, weil malloc nur Bytes kennt:  void*  "Adresse auf nichts" // Anfangsadresse von BYTES
+
+   void* Anfangsadresse eines Abschnitts von Bytes.
+
+Fragen:
+
+1) Wie schaffe ich es nach dem allokieren des Speichers,
+von überall aus im Programm die entsprechende Adresse zuzugreifen?
+
+Speichert man die  Adresse dann in eine globale Variable?
+
+i)  Ein Zeiger kann über viele Unterprogramm-Aufrufe im
+    Programm weitergereicht werden.
+
+
+ii) Option: In gobalen Variablen geht das auch !!!
+
+    Beispiel:
+
+    int* dynamic_data[10];   // 10 ist vergleichsweise klein.
+
+    // Die Zeiger, die auf die Daten zeigen, können in ihrem Umfang
+    // dem eigentlichen Proble, / der eigentlichen Anforderung angepasst werden.
+
+
+    Stichwort: "Jagged Array"  // gezacktes Array
+
+    Oder:
+
+    Verkettete Liste // Linked List // Bibliotheken // C++ : Standard Template Library (STL)
+
+    (( Algorithmen und Datenstrukturen  ))
+
+    Don't Reevent the Wheel  // DRY:  Don't repeat yourself
+
+
+2) Warum brauche ich globale Variablen überhaupt?
+   Kann ich nicht alle notwendigen Daten(oder deren Adressen)
+   in den Parametern mitgeben?
+
+Antwort:
+
+Prinzipiell: Ja.  // Ginge
+
+Warum tut man dieser eher nur vorsichtig oder eher nicht ???
+
+a) Jede Funktion bekommt automatisch einen - oder mehrere - Parameter dazu.
+
+b) Macht es im Handling nicht einfacher
+
+c) PERFORMANZ: 
+
+d) Ausgewogenheit: 
+
+// ====================================================
+
+1) und 2)
+
+Antwort: ====> C++   // Objekt 
+
+// ====================================================
+
+Zeichen // Zeichenketten:
+
+C:
+
+a) Numerische Stärke
+
+b) Zeichenverarbeitung.
+
+Wörter // Statistiken 
+
+a) Zeichen:  char   // ONE character
+
+b) Zeichenkette / string / multiples characters
+
+// Verbindung:  int  <==>  char
+
+Welche Zeichen gibt es in C?
+
+Tabelle: ASCII Tabelle
+
+Von 0 bis 127:    Zuordnung: Wert <-> Zeichen
+
+
+Spezialzeichen:
+
+End of Transmission:  EOT
+
+Neue Zeile / New Line:           \n
+
+Wagenrücklauf:  Carriage Return  \r
+
+
+Neue Zeile:  \r\n
+
+=================================================
+
+Zeichenketten:
+
+Aufbau im Speicher:
+
+"Hallo"     ==> 5 Zeichen
+
+Wie ein Feld, Zeichen für Zeichen:
+
+EXAKT:  
+
+H  72
+a  97
+l  108
+o  111
+
+
+Beispiel:
+
+Berechnung der Länge einer Zeichenkette.
+
+Ausgangssitution:
+
+Ich habe eine Adresse (die des ersten Zeichens):
+
+Man kann mit einer Adresse wie mit einem Array arbeiten?
+
+
+===========================================================
+
+We talked about Arrays:
+
+int lotto_zahlen[6]; 
+
+Provokant: Es GIBT KEINE ARRAYS in C - REALITÄT.
+
+
+Was ist 'lotto_zahlen' !!!!!
+
+A) Eine Adresse // ein Anfangsadresse
+
+B) Auf Grund von der Zahl 6 werden nach dieser Adresse 6 * 4 = 24 Bytes RESERVIERT.
+
+
+===========================================================
+ 
+Füße:
+
+Absturz:
+
+Hölle:
+
+Sporadische Absturz: Nicht reproduzierbar !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Todesmarsch  // Death March von Edward Yourdon.
+
+
+===========================================================
+
+Finale:
+
+Beispiel:   Kontakte-App
+
+== Strukturen
+
+== Arrays
+
+== Eingabe
+
+== printf-Menü
+
+
+struct Contact
+{ 
+    char name [64];
+
+    // char* name;
+
+    int number;
+}
+
+2 Schritte:
+
+a) Erst mal ein Kontakt
+
+...............................
+
+b) Mehrere Kontakte:
+
+i) Feld fester Länge.
+
+ii) Feld dynamischer Länge
+ 
+    new // delete 
+
+    new: 50 .... 51 Eintrag
+
+    NEU allokieren: 100
+
+    Die vorhandenen 50 umkopieren
+
+    49 freie Einträge
+
+    Die vorhandenen 50 freigeben
+
+===========================================================
+
+
+C: 
+
+"Klassen":   "Struct are the poor man's classes"
+
+Axel Tobias schreiner 
+
+===================================================
+
+Frage:
+
+Kann ich mit #define definierte   Werte zur Laufzeit ändern?
+
+Nein.
+
+Dann wäre #define nicht das Mittel der Wahl
+
+ABER:
+
+#define MaxEntries 10;
+
+int count = MaxEntries;
+
+count ++;
+
+===================================================
+
+Einer der berühmtesten Fehler:
+
+"not all control paths return a value"
+
